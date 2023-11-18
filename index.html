@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Blogsite</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+            <div class="header-text">
+            <p>BSIT STUDENT</p>
+            <h1>Hi,<br> I'm<span> Jegie</span> </h1>
+            <h2>Welcome to <span>My Personal </span>Blogsite</h2>
+            
+            </div>
+        </div>
+        </div>
+    </div>
+    <!---------------about------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pics/JEG 4.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Hello Welcome to my Blog I'm Jegie Mahusay, you can call me Jeg for short.
+                        I am 20 years old and currently living at Margarita Village San Carlos City 
+                        negros Occidental.<br> If you wanna know me more just click the three buttom below:</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('favorites')">Favorites</p>
+                            <p class="tab-links"onclick="opentab('thoughts')">Thoughts</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>PHOTOGRAPHER</span><br>Any kind of Photoshoot Sesion such as:<br>*Pre- Birthday
+                                photoshoot<br>*Portrait Session<br>*Casual Photoshoot<br>*Street Photography</li>
+                                <li><span>PHOTO EDITOR</span><br>Photo Enhancing such as:<br>*Filter enhancing<br>*Photo LayOut<br>*Photo Collage<br>*Making filter Presets</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents"id="favorites">
+                            <ul>
+                                <li><span>My Favorite Foods</span><br>are:<br>*Crispy Pata<br>*Adobo<br>*Sinigang<br>*Fried Chicken<br>*Spaghetti</li>
+                                <li><span>Place that where I want to go</span><br>are:<br>*Italy<br>*Paris<br>*U.S.A<br>*Korea<br>*Amsterdam</li>
+                                <li><span>Favorite color</span><br>are:<br>*Black <br>*White<br>*Sky Blue<br>*Neutral colors</li>
+                            </ul>
+                        </div> <div class="tab-contents"id="thoughts">
+                            <ul>
+                                <li><span>For Love</span><br>The word Love isn't easy to give but easy to say. For me the definition of love is that when you are accepting and forgiving to the people who has a sin from you or to your enemy coz when you accept and forgive that person in your life it has a love on it. Because love is no condition at all, like how God love's us and forgive all of our sins here on earth.</li>
+                                <li><span>Random Thoughts</span><br>Life is thoughtful we may encounter different struggles and problems in our lives until we realize that this how life's going. As I grow older I have so many disappointments and realization in life. Sometimes I ask myself if this path where I walked today is good for me or this is for me until such time I read a Book entitled The Purpose Driven Life By: Rick Warren in that Book has a saying that " Whoever wants to be great must become a servant " and in that moment after reading that qoute I've started doing things that can help me to have a mature mindset where I've started serving the Lord, whcih I'm one of the altar server. </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+        <!--------------services------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                <div>
+                    
+                    <h2>Photographer</h2>
+                    <p>I am a photographer since I was in HighSchool. This my passion to capture different beauty of people and the beauty of nature.<br> I can assure that my service can make you satisfied.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    
+                    <h2>Photo Editor</h2>
+                    <p>I can assure you to have a good quality photos in my service and also give the satisfaction that everyone's wanted..</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    
+                    <h2>Stylish</h2>
+                    <p>I will give my very best to your fashion style. Until you get your want!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------portfolio------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="pics/logo.png" width="500px" height="400px">
+                    <div class="layer">
+                        <h3>J-Photography</h3>
+                        <p>This is someof my photos chu2</p>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="pics/love.jpg" width="500px" height="400px">
+                    <div class="layer">
+                        <h3>Jeg Presets</h3>
+                        <p>Choose the best choice that can make you satisfy.</p>
+                        
+                    </div>
+                </div><div class="work">
+                    <img src="pics/back.jpg" width="500px" height="400px"> 
+                    <div class="layer">
+                        <h3>Mr.Jegs Style</h3>
+                        <p>Style it to be make it!</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    
+    </body>
+</html>
